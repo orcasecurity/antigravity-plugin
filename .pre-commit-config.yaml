@@ -33,3 +33,13 @@ repos:
     hooks:
       - id: shellcheck
         files: \.(ba|z|fish|ksh|sh)$
+
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.38.2
+    hooks:
+      - id: check-jsonschema
+        name: Validate plugin.json against the Antigravity plugin schema
+        files: ^plugin\.json$
+        args:
+          - --schemafile
+          - https://antigravity.google/schemas/v1/plugin.json
