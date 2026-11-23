@@ -15,6 +15,19 @@
 
 Connects Antigravity's agent to the [Orca Security MCP server](https://orca.security/mcp-server/), so it can triage alerts, explore assets and attack paths, query your cloud inventory, track compliance, and search cloud detection events using live data from your Orca account.
 
+### What you can ask for
+
+- **Alerts:** find, filter and triage alerts. Read an alert's details, timeline, attack path and AI agent findings. Change its status or score, snooze it, or add comments.
+- **Assets:** look up cloud assets by name or ID. See the alerts and attack paths that touch them, and mark crown jewels.
+- **Attack paths:** explore how an attacker could reach your most sensitive assets.
+- **Vulnerabilities:** check whether a CVE affects your environment, and look it up in Orca's CVE catalog.
+- **Compliance:** review enabled frameworks, failed controls and posture trends per account or business unit.
+- **Cloud detection and response (CDR):** search and group cloud audit events.
+- **Orca AI agents:** list the agents available for an alert, run them, and read their results.
+- **Documentation:** search Orca's product documentation.
+
+Every action runs with your own Orca user's permissions.
+
 ## Requirements
 
 - An Orca Security account
@@ -65,6 +78,26 @@ The plugin uses OAuth and needs no configuration, so it installs enabled. When i
 
 If you need to sign in again, go to **Customizations** > **Installed** > **MCP Servers** and click **Authenticate**.
 
+In the `agy` CLI, sign in from `/plugin` > **Installed** > **orca-security** > **Sign in**.
+
+<details>
+<summary>Use an Orca API token instead of OAuth</summary>
+
+Add this server to `~/.gemini/config/mcp_config.json`, using your regional URL if your account isn't in the US (for example `https://api.eu.orcasecurity.io/mcp`):
+
+```json
+{
+  "mcpServers": {
+    "orca-security-token": {
+      "serverUrl": "https://api.orcasecurity.io/mcp",
+      "headers": { "Authorization": "Token YOUR_ORCA_TOKEN" }
+    }
+  }
+}
+```
+
+</details>
+
 ## Try it
 
 - Show my top critical alerts in Orca
@@ -88,7 +121,7 @@ If you need to sign in again, go to **Customizations** > **Installed** > **MCP S
 
 ## Support
 
-- **Email:** support@orca.security
+- **Email:** mcp@orca.security
 - **Docs:** https://docs.orcasecurity.io/docs/mcp-integration
 
 ## Security

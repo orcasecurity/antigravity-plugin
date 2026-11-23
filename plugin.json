@@ -3,11 +3,11 @@
   "name": "orca-security",
   "displayName": "Orca Security",
   "version": "1.0.0",
-  "description": "Investigate cloud security risk with Orca Security: triage alerts, explore assets and attack paths, query cloud inventory, track compliance, and search cloud detection events across AWS, Azure, GCP, and more.",
+  "description": "Investigate cloud risk from your IDE: query Orca alerts, assets, attack paths, CVEs and compliance posture, and triage findings with Orca's MCP server.",
   "logo": "assets/logo.png",
   "author": {
     "name": "Orca Security",
-    "email": "support@orca.security",
+    "email": "mcp@orca.security",
     "url": "https://orca.security"
   },
   "homepage": "https://orca.security/mcp-server/",
