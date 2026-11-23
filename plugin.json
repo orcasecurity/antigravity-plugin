@@ -1,0 +1,31 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "orca-security",
+  "displayName": "Orca Security",
+  "version": "1.0.0",
+  "description": "Investigate cloud security risk with Orca Security: triage alerts, explore assets and attack paths, query cloud inventory, track compliance, and search cloud detection events across AWS, Azure, GCP, and more.",
+  "logo": "assets/logo.png",
+  "author": {
+    "name": "Orca Security",
+    "email": "support@orca.security",
+    "url": "https://orca.security"
+  },
+  "homepage": "https://orca.security/mcp-server/",
+  "repository": "https://github.com/orcasecurity/antigravity-plugin",
+  "license": "MIT",
+  "keywords": [
+    "orca",
+    "orca security",
+    "orca-security",
+    "cloud security",
+    "cspm",
+    "cnapp",
+    "attack path",
+    "security alerts"
+  ],
+  "suggestedPrompts": [
+    "Show my top critical alerts in Orca",
+    "Which attack paths lead to my most sensitive assets?",
+    "What is my compliance status for CIS AWS Foundations?"
+  ]
+}
